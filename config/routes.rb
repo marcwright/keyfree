@@ -3,8 +3,10 @@ Keyfree::Application.routes.draw do
 
     resources :rests
     resources :users
-    resources :authentications
-#     get 'users/new' => 'users#new'
+
+
+    get 'signin' => 'authentications#new'
+    get 'signout' => 'authentications'
 #     post 'users' => 'users#create'
 
 #     get 'rests' => 'rests#index'
