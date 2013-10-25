@@ -1,0 +1,47 @@
+<div id="newrest">
+<div id="newrestbox">
+<h1>Create a New User</h1>
+
+<%= form_for @user , html: {class: "form-group col-lg-8"} do |i|%>
+
+<p>
+  <%= i.label :email, ""%>
+  <%= i.text_field :email, class: "form control", placeholder: "Email" %>
+</p>
+
+<p>
+  <%= i.label :password, ""%>
+  <%= i.password_field :password, class: "form control", placeholder: "Password"%>
+</p>
+
+<p>
+  <%= i.label :password_confirmation, ""%>
+  <%= i.password_field :password_confirmation, class: "form control", placeholder: "Confirmation"%>
+</p>
+
+<p><center>
+  <%= i.submit%>
+</center></p>
+
+<!-- <form role="form">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+ 
+  <button type="submit" class="btn btn-default">Submit</button>
+</form> -->
+
+<%end%>
+User id: <%= session[:user_id] %>
+</div>
+</div>

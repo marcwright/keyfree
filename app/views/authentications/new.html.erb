@@ -1,0 +1,33 @@
+Sign in
+<br />
+<%= form_for @user, {url:"/authentications", method:"post"} do |u| %>
+	<%= u.label :email, "Email" %><%=u.text_field :email %><br />
+	
+	<%= u.label :password, "Password" %><%=u.text_field :password %><br />
+	<%= u.submit "Log In" %>
+<% end %>
+
+<hr />
+User id: <%= session[:user_id] %>
+
+<!-- <div id="newuser">
+<h1>Login Here</h1>
+
+<%= form_for @user, {url:"/authentications", method:"post"} do |i|%>
+
+<p>
+  <%= i.label :email, "Email"%>
+  <%= i.text_field :email%>
+</p>
+
+<p>
+  <%= i.label :password, "Password"%>
+  <%= i.password_field :password%>
+</p>
+
+<p>
+  <%= i.submit "LOG IN" %>
+</p>
+
+<%end%>
+</div> -->

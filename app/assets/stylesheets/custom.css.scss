@@ -1,0 +1,121 @@
+@import 'bootstrap';
+/*@import 'bootstrap-responsive';
+*/
+$maincolor: black;
+
+.jumbotron {
+	width: 300;
+	opacity: .8;
+}
+
+#newuser {
+	margin: 0 auto;
+	width: 400px;
+}
+
+#newrest {
+	margin: 0 auto;
+	width: 250px;	
+	position: relative;
+	
+}
+
+#newrestbox {
+	margin: 0 auto;
+	width: 250px;
+	background-color: rgba(205, 45, 45, 0.7);
+	color: black;
+	border-radius: 20px;
+	position: absolute;
+}
+
+li {
+	color: $maincolor;
+}
+
+body {
+	background-image: url('corks75.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.row div {
+	border: 2px solid black;
+}
+
+.row {
+
+	color: $maincolor;
+}
+
+body {
+	background-color: $maincolor;
+	font-family: helvetica;
+}
+
+#container {
+	background-color: #eee;
+	width: 800px;
+	margin: 0 auto;
+
+}
+
+#indexcontainer {
+	margin: 0 auto;
+	background-color: black;
+}
+
+/*table {
+	color: white;
+}
+
+th {
+	color: white;
+}
+
+tr {
+	color: white;
+}*/
+
+	.mybutton {
+	   border-top: 1px solid #96d1f8;
+	   background: #65a9d7;
+	   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+	   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+	   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+	   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+	   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+	   padding: 11px 22px;
+	   -webkit-border-radius: 19px;
+	   -moz-border-radius: 19px;
+	   border-radius: 19px;
+	   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	   box-shadow: rgba(0,0,0,1) 0 1px 0;
+	   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	   color: white;
+	   font-size: 18px;
+	   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+	   text-decoration: none;
+	   vertical-align: middle;
+	   }
+	.mybutton:hover {
+	   border-top-color: #28597a;
+	   background: #28597a;
+	   color: #ccc;
+	   }
+	.mybutton:active {
+	   border-top-color: #1b435e;
+	   background: #1b435e;
+	   }
+	
+
+/*	#newcontainer {
+		margin: 15px;
+		background-color: blue;
+
+		h1 {
+			color: yellow;
+		}
+	}
+*/
