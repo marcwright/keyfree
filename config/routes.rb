@@ -1,12 +1,16 @@
 Keyfree::Application.routes.draw do
-    root to: 'rests#home'
+    root to: 'authentications#new'
 
-    resources :rests
-    resources :users
+   put 'groups' => 'groups#update'
+
+ resources :users
+ resources :authentications
+ resources :groups
+ resources :rests
 
 
-    get 'signin' => 'authentications#new'
-    get 'signout' => 'authentications'
+    # get 'signin' => 'authentications#new'
+    # get 'signout' => 'authentications'
 #     post 'users' => 'users#create'
 
 #     get 'rests' => 'rests#index'

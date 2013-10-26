@@ -1,5 +1,5 @@
 class AuthenticationsController < ApplicationController
-	before_action :auhenticate_user, only: [:destroy]
+	before_action :authenticate_user, only: [:destroy]
 
 	def new
 		# Are they already logged in?
@@ -17,7 +17,7 @@ def create
         # authenticate user
         if user.authenticate(params[:user][:password])
           session[:user_id] = user.id
-          redirect_to users_url
+          redirect_to groups_url
         else
           flash.now.alert = "Unable to sign you in. Please try again."
           render :new
@@ -25,9 +25,10 @@ def create
     end
 end
 
-def destroy
+  def destroy
     session[:user_id] = nil
-    redirect_to authentications_url,
-    notice: "You signed out."
+    @dude = "Hi"
+    # redirect_to authentications_url,
+    #  notice: "You signed out."
   end
-  end
+end

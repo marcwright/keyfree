@@ -9,13 +9,13 @@ class User
 	field :salt, type: String
 	field :hashed_password, type: String
 
-    # has_and_belongs_to_many :ugroups, class_name:"Group", inverse_of: :gusers
+  belongs_to :groups, class_name:"Group", inverse_of: :users
 	  
-    validates :email, presence: true
-	  validates :email, uniqueness: { case_sensitive: false }
-	  validates :password, confirmation: true
+  validates :email, presence: true
+	validates :email, uniqueness: { case_sensitive: false }
+	validates :password, confirmation: true
 
-     before_save :hash_password
+  before_save :hash_password
 
   def authenticate(password)
     self.hashed_password ==
