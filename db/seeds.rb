@@ -10,7 +10,9 @@
 Rest.destroy_all
 
 Rest.create([
-	{name: 'Alegria on Sunset', city: 'Silverlake', zip: '90026', web: 'http://www.alegriaonsunset.com/', fee: $0},
-	{name: 'Beckham Grill', city: 'Pasadena', zip: '91103', web: 'http://www.beckhamgrill.com/', fee: $2},
-	{name: 'Bottega Louie', city: 'Downtown LA', zip: '90017', web: 'http://www.bottegalouie.com/', fee: $0, notes: "First bottle free; $15 for subsequent bottles"}
+	{name: 'Alegria on Sunset', lat: '34.088755', lon: '-118.276434', city: 'Silverlake', zip: '90026', web: 'http://www.alegriaonsunset.com/', fee: $0},
+	{name: 'Beckham Grill', lat: '34.149954', lon: '-118.152005', city: 'Pasadena', zip: '91103', web: 'http://www.beckhamgrill.com/', fee: $2},
+	{name: 'Bottega Louie', lat: '34.048393', lon: '-118.256664', city: 'Downtown LA', zip: '90017', web: 'http://www.bottegalouie.com/', fee: $0, notes: "First bottle free; $15 for subsequent bottles"}
 ])
+
+

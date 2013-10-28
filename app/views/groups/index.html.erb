@@ -5,6 +5,10 @@
 	<div class="big">Guess what, you're logged in as </div> <%= current_user.email %>!
 <% end %>
 <br />
+
+
+
+
 <table>
 <%= form_tag :action => "update" do %>
 	<% @groups.each do |g| %>
@@ -34,3 +38,5 @@ Create a new group:
 	<%= newG.text_area :descrip, cols:"30", rows:"10" %><br />
 	<%= newG.submit "Create this group!" %>
 <% end %>
+
+ <div id="map-canvas"/>

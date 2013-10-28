@@ -8,6 +8,7 @@ class User
 	field :email, type: String
 	field :salt, type: String
 	field :hashed_password, type: String
+ 
 
   belongs_to :groups, class_name:"Group", inverse_of: :users
 	  

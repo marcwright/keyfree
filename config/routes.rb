@@ -1,12 +1,12 @@
 Keyfree::Application.routes.draw do
     root to: 'authentications#new'
 
-   put 'groups' => 'groups#update'
+   	put 'groups' => 'groups#update'
 
- resources :users
- resources :authentications
- resources :groups
- resources :rests
+	 resources :users
+	 resources :authentications
+	 resources :groups
+	 resources :rests
 
 
     # get 'signin' => 'authentications#new'

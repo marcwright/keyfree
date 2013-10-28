@@ -7,5 +7,7 @@ class Rest
 	field :web, type: String
 	field :fee, type: Integer
 	field :notes, type: String
+	field :lat, type: String
+    field :lon, type: String
 
 end
