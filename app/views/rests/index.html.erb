@@ -1,16 +1,25 @@
 <div id="newrest">
-<div id="newrestbox">
-<h1>List of Restaurants</h1>
+	<div id="newrestbox">
+		<h1>List of Restaurants</h1>
 
-	<% @rests.each do |rest| %>
+
+<!-- <address>
+  <strong>Twitter, Inc.</strong><br>
+  795 Folsom Ave, Suite 600<br>
+  San Francisco, CA 94107<br>
+  <abbr title="Phone">P:</abbr> (123) 456-7890
+</address> -->
+
+		<address>
+			<% @rests.each do |rest| %>
 	
 	
-			<%= rest.name %><br/>
-			<%= rest.city %><br/>
-			<%= rest.zip %><br/>
-			<%= rest.web %><br/>
-			<%= rest.fee %><br/>
-			<%= rest.notes %><br/>
+				<strong><%= rest.name %></strong><br/>
+				<%= rest.city %><br/>
+				<%= rest.zip %><br/>
+				Fee: $<%= rest.fee %><br/>
+				<a href="<%= rest.web %>" class="btn btn-default btn-sm"><%= rest.name %></a><br/>
+				<%= rest.notes %><br/>
 		
 
 <!-- 		<%= button_to "X", { action: "destroy", id: rest.id},
@@ -18,43 +27,8 @@
 		
 
 
-<%end %>
-
+			<%end %>
+		</address>
+	</div>
 </div>
-</div>
 
-
-
-<!-- 
-
-<table>
-		<tr>
-			<th>NAME</th>
-			<th>CITY</th>
-			<th>ZIP</th>
-			<th>WEBSITE</th>
-			<th>FEE</th>
-			<th>NOTES</th>
-		</tr>
-
-	<% @rests.each do |rest| %>
-	
-		<tr>
-			<td><%= rest.name %></td>
-			<td><%= rest.city %></td>
-			<td><%= rest.zip %></td>
-			<td><%= rest.web %></td>
-			<td><%= rest.fee %></td>
-			<td><%= rest.notes %></td>
-		
-
-		<td><%= button_to "X", { action: "destroy", id: rest.id},
-			{method: :delete, data:{confirm:"Are you damn sure?"}} %></td>
-		
-		</tr>
-
-<%end %>
-
-</table>
-
- -->

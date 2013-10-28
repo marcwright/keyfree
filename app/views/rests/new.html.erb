@@ -1,47 +1,39 @@
   
 <div id="newrest">
-<div id="newrestbox">
+	<div id="newrestbox">
 
+		<h1>Enter a new Restaurant</h1>
 
-<h1>Enter a new Restaurant</h1>
+			<%= form_for @rest, html: {class: "form-group col-lg-8"} do |i|%>
 
+		<p>
+			<%= i.label :name, ""%><br />
+			<%= i.text_field :name, class: "form control", placeholder: "Restaurant Name" %>
+		</p>
+		<p>
+			<%= i.label :city, ""%><br />
+			<%= i.text_field :city, class: "form control", placeholder: "City" %>
+		</p>
+		<p>
+			<%= i.label :zip_code, ""%><br />
+			<%= i.text_field :zip, class: "form control", placeholder: "Zip Code" %>
+		</p>
+		<p>
+			<%= i.label :website, ""%><br />
+			<%= i.text_field :web, class: "form control", placeholder: "Website" %>
+		</p>
+		<p>
+			<%= i.label :corkage_fee, ""%><br />
+			<%= i.text_field :fee, class: "form control", placeholder: "Corkage Fee" %>
+		</p>
+		<p>
+			<%= i.label :notes, ""%><br />
+			<%= i.text_field :notes, class: "form control", placeholder: "Notes" %>
+		</p>
+		<p>
+			<%= i.submit%>
+		</p>
 
-<%= form_for @rest, html: {class: "form-group col-lg-8"} do |i|%>
-
-<p>
-	<%= i.label :name, ""%><br />
-	<%= i.text_field :name, class: "form control", placeholder: "Restaurant Name" %>
-</p>
-
-<p>
-	<%= i.label :city, ""%><br />
-	<%= i.text_field :city, class: "form control", placeholder: "City" %>
-</p>
-
-<p>
-	<%= i.label :zip_code, ""%><br />
-	<%= i.text_field :zip, class: "form control", placeholder: "Zip Code" %>
-</p>
-
-<p>
-	<%= i.label :website, ""%><br />
-	<%= i.text_field :web, class: "form control", placeholder: "Website" %>
-</p>
-
-<p>
-	<%= i.label :corkage_fee, ""%><br />
-	<%= i.text_field :fee, class: "form control", placeholder: "Corkage Fee" %>
-</p>
-
-<p>
-	<%= i.label :notes, ""%><br />
-	<%= i.text_field :notes, class: "form control", placeholder: "Notes" %>
-</p>
-
-<p>
-	<%= i.submit%>
-</p>
-
-<%end%>
-</div>
+			<%end%>
+	</div>
 </div>
