@@ -11,6 +11,18 @@ $maincolor: black;
  	top: 150px;
  }
 
+ h3 {
+ 	color: white;
+ }
+
+.navbar {
+	display: inline-block;
+}
+
+.masthead {
+  display: inline-block;
+ }
+
 .jumbotron {
 	width: 300;
 	opacity: .8;
@@ -73,18 +85,6 @@ body {
 	background-color: black;
 }
 
-/*table {
-	color: white;
-}
-
-th {
-	color: white;
-}
-
-tr {
-	color: white;
-}*/
-
 	.mybutton {
 	   border-top: 1px solid #96d1f8;
 	   background: #65a9d7;
@@ -117,13 +117,3 @@ tr {
 	   background: #1b435e;
 	   }
 	
-
-/*	#newcontainer {
-		margin: 15px;
-		background-color: blue;
-
-		h1 {
-			color: yellow;
-		}
-	}
-*/

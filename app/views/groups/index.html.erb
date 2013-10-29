@@ -1,42 +1,41 @@
 <!-- Dude here is a list of all the groups -->
 <!-- and if you're logged in you can select which ones you belong to -->
+<div id="newrest">
+	<div id="newrestbox">
+		<% if current_user %>
+			<div class="big">Guess what, you're logged in as </div> <%= current_user.email %>!
+		<% end %>
+		<br />
 
-<% if current_user %>
-	<div class="big">Guess what, you're logged in as </div> <%= current_user.email %>!
-<% end %>
-<br />
-
-
-
-
-<table>
-<%= form_tag :action => "update" do %>
-	<% @groups.each do |g| %>
-	 <tr>
-		<td rowspan="2">
-			<% if current_user %>
-				<%= check_box_tag "grp"+g.id, "Y", g.users.include?(current_user) %>
+		<table>
+		<%= form_tag :action => "update" do %>
+			<% @groups.each do |g| %>
+			 <tr>
+				<td rowspan="2">
+					<% if current_user %>
+						<%= check_box_tag "grp"+g.id, "Y", g.users.include?(current_user) %>
+					<% end %>
+				</td>
+				<td><%= link_to g.name, g %></td>
+			 </tr>
+		 <tr>
+				 <td><%= g.descrip %></td>
+			 </tr>
 			<% end %>
-		</td>
-		<td><%= link_to g.name, g %></td>
-	 </tr>
-	 <tr>
-		 <td><%= g.descrip %></td>
-	 </tr>
-	<% end %>
-	</table>
+			</table>
 
-	<%= button_to "Update group membership", groups_url, method: :put %>
+			<%= button_to "Update group membership", groups_url, method: :put %>
 
-<%= button_to "Log out", "/authentications/_", method: :delete %>
+				<%= button_to "Log out", "/authentications/new/", method: :delete %>
 
-<% end %>
+			<% end %>
 
-Create a new group:
-<%= form_for @group do |newG| %>
-	<%= newG.text_field :name %><br />
-	<%= newG.text_area :descrip, cols:"30", rows:"10" %><br />
-	<%= newG.submit "Create this group!" %>
-<% end %>
+		Create a new group:
+		<%= form_for @group do |newG| %>
+			<%= newG.text_field :name %><br />
+			<%= newG.text_area :descrip, cols:"20", rows:"10" %><br />
+			<%= newG.submit "Create this group!" %>
+		<% end %>
 
- <div id="map-canvas"/>
+ 	</div>
+</div>
