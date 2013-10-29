@@ -1,31 +1,27 @@
 <div id="newrest">
-<div id="newrestbox">
-<h1>Create a New User</h1>
+  <div id="newrestbox">
+    <h1>Create a New User</h1>
 
-<%= form_for @user , html: {class: "form-group col-lg-8"} do |i|%>
+      <%= form_for @user , html: {class: "form-group col-lg-10"} do |i|%>
 
-<p>
-  <%= i.label :email, ""%>
-  <%= i.text_field :email, class: "form control", placeholder: "Email" %>
-</p>
+        <p>
+          <%= i.label :email, ""%><br/>
+          <%= i.text_field :email, class: "form control", placeholder: "Email" %>
+        </p>
+        <p>
+          <%= i.label :password, ""%><br/>
+          <%= i.password_field :password, class: "form control", placeholder: "Password"%>
+        </p>
+        <p>
+          <%= i.label :password_confirmation, ""%><br/>
+          <%= i.password_field :password_confirmation, class: "form control", placeholder: "Confirmation"%>
+        </p>
+        <p>
+          <%= i.submit%>
+        </p>
+        User id: <%= session[:user_id] %>
 
-<p>
-  <%= i.label :password, ""%>
-  <%= i.password_field :password, class: "form control", placeholder: "Password"%>
-</p>
-
-<p>
-  <%= i.label :password_confirmation, ""%>
-  <%= i.password_field :password_confirmation, class: "form control", placeholder: "Confirmation"%>
-</p>
-
-<p><center>
-  <%= i.submit%>
-</center></p>
-
-
-
-<%end%>
-User id: <%= session[:user_id] %>
-</div>
+      <%end%>
+          
+  </div>
 </div>

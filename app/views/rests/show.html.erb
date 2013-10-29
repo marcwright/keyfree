@@ -1,12 +1,11 @@
-  
 <div id="newrest">
-	<div id="newrestbox">
+	 <div id="newrestbox">
 
 		<strong><%= @rest.name %></strong></br>
 		<%= @rest.city %></br>
 		<%= @rest.zip %></br>
-		<%= @rest.web %></br>
-		<%= @rest.fee %></br>
+		Website: <%= @rest.web %></br>
+		Fee: $<%= @rest.fee %></br>
 		<%= @rest.notes %></br>
 		
 
@@ -44,11 +43,12 @@
         google.maps.event.addListener(map,'click',function(evt){console.log(evt.latLng);});
 
       }
-        google.maps.event.addDomListener(window, 'load', initialize
+        google.maps.event.addDomListener(window, 'page:change', initialize
         );
 
     </script>
 
-  		<div id="map-canvas"/>
-	</div>
+  		
+	 </div>
+  <div id="map-canvas"/>
 </div>
