@@ -7,7 +7,7 @@
 
 <b><%= @group.name %></b><br />
 
-<% @group.gusers.each do |u| %>
+<% @group.users.each do |u| %>
  <%= u.email %>
  	<% if u.email == current_user.email %>
  		<%= " It's me!!!!" %>

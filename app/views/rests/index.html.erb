@@ -10,11 +10,11 @@
   <abbr title="Phone">P:</abbr> (123) 456-7890
 </address> -->
 
-		<address>
+	
 			<% @rests.each do |rest| %>
 	
 	
-				<strong><%= rest.name %></strong><br/>
+				<strong><%= link_to rest.name, rest %></strong><br/>
 				<%= rest.city %><br/>
 				<%= rest.zip %><br/>
 				Fee: $<%= rest.fee %><br/>
@@ -22,13 +22,13 @@
 				<%= rest.notes %><br/>
 		
 
-<!-- 		<%= button_to "X", { action: "destroy", id: rest.id},
-			{method: :delete, data:{confirm:"Are you damn sure?"}} %> -->
-		
+<!-- 			<%= button_to "X", { action: "destroy", id: rest.id},
+			{method: :delete, data:{confirm:"Are you damn sure?"}} %>
+ -->		
 
 			<%end %>
 
-		</address>
+	
 	</div>
 </div>
 

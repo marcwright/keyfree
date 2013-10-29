@@ -16,10 +16,10 @@
 						<%= check_box_tag "grp"+g.id, "Y", g.users.include?(current_user) %>
 					<% end %>
 				</td>
-				<td><%= link_to g.name, g %></td>
+				<td>Here is the group name: <%= link_to g.name, g %></td>
 			 </tr>
 		 <tr>
-				 <td><%= g.descrip %></td>
+				 <td>Here is the group desc: <%= g.descrip %></td>
 			 </tr>
 			<% end %>
 			</table>
