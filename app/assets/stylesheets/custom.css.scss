@@ -4,8 +4,8 @@
 $maincolor: black;
 
  #map-canvas { 
- 	height: 300px;
- 	width: 300px;
+ 	height: 400px;
+ 	width: 400px;
  	margin: 0 auto;
  	position: absolute;
  	top: 150px;
@@ -54,7 +54,7 @@ li {
 }
 
 body {
-	background-image: url(image-path('corks75.png'));
+	background-image: url(image-path('corks3.png'));
 	background-size: cover;
 	background-repeat: no-repeat;
 }
