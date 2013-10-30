@@ -1,4 +1,4 @@
-∏class RestsController < ApplicationController
+class RestsController < ApplicationController
 	def index
 		@rests = Rest.all
 	end
