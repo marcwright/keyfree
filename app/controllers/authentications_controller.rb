@@ -4,7 +4,7 @@ class AuthenticationsController < ApplicationController
 	def new
 		# Are they already logged in?
 		if current_user # They are!  Can't create them again.
-			redirect_to users_url
+			redirect_to 'users/new'
 		else
 			@user = User.new
 			# render :new
@@ -17,7 +17,7 @@ def create
         # authenticate user
         if user.authenticate(params[:user][:password])
           session[:user_id] = user.id
-          redirect_to groups_url
+          redirect_to rests_url
         else
           flash.now.alert = "Unable to sign you in. Please try again."
           render :new
