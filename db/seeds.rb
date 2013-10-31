@@ -7,6 +7,27 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
+# u = User.all[0]
+# u.scores.create(test_name:"SAT", test_score:1208)
+# u.scores.create(test_name:"ACT", test_score:29)
+# u.scores.create(test_name:"AFQT", test_score:76)
+# u = User.all[1]
+# u.scores.create(test_name:"SAT", test_score:932)
+# u.scores.create(test_name:"ACT", test_score:24)
+# u.scores.create(test_name:"AFQT", test_score:58)
+# u = User.all[2]
+# u.scores.create(test_name:"SAT", test_score:1121)
+# u.scores.create(test_name:"ACT", test_score:30)
+# u.scores.create(test_name:"AFQT", test_score:63)
+# u = User.all[3]
+# u.scores.create(test_name:"SAT", test_score:1360)
+# u.scores.create(test_name:"ACT", test_score:33)
+# u.scores.create(test_name:"AFQT", test_score:87)
+
+
+
+
+
 Rest.destroy_all
 
 Rest.create([
@@ -21,8 +42,8 @@ Rest.create([
 	{name: 'Far Niente', lat: '34.088755', lon: '-118.276434', city: 'Glendale', zip: '91203', web: 'http://www.farnienteglendale.com/', fee: $0},
 	{name: 'Foundry on Melrose', lat: '34.088755', lon: '-118.276434', city: 'West Hollywood', zip: '90036', web: 'http://thefoundryonmelrose.com/', fee: $0},
 	{name: 'Girasole', lat: '34.088755', lon: '-118.276434', city: 'Larchmont Village', zip: '90004', web: 'http://girasolecucina.com/', fee: $0},
-	{name: 'Houstons', lat: '34.088755', lon: '-118.276434', city: 'Santa Monica', fee: $0}
-	# {name: 'Jitlada Thai', lat: '34.088755', lon: '-118.276434', city: 'Hollywood', zip: '90027	http://localthaifood.moxyfy.com/restaurant/details/%26id=176, fee: $0},
+	{name: 'Houstons', lat: '34.088755', lon: '-118.276434', city: 'Santa Monica', fee: $0},
+	{name: 'Jitlada Thai', lat: '34.088755', lon: '-118.276434', city: 'Hollywood', zip: '90027', web: 'http://localthaifood.moxyfy.com/restaurant/details/%26id=176', fee: $0}
 	# {name: 'La Grande Orange', lat: '34.088755', lon: '-118.276434', city: 'Pasadena', zip: '91105	http://www.lagrandeorangecafe.com/, fee: $0},
 	# {name: 'Latitude Thai', lat: '34.088755', lon: '-118.276434', city: 'Santa Monica', zip: '90405	http://www.lattitudethai.com/, fee: $0},
 	# {name: 'Metro Café', lat: '34.088755', lon: '-118.276434', city: 'Culver City', zip: '	90232	http://www.metrocafela.com/, fee: $0},
@@ -40,7 +61,6 @@ Rest.create([
 	# {name: 'Zanes Restaurant', lat: '34.088755', lon: '-118.276434', city: 'Hermosa Beach'		
 
 
-<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=10250+Santa+Monica+Blvd+Los+Angeles,+CA+90067&amp;ie=UTF8&amp;hq=&amp;hnear=10250+Santa+Monica+Blvd,+Los+Angeles,+California+90067&amp;gl=us&amp;t=h&amp;z=14&amp;ll= 34.058603,-118.419048 ;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?q=10250+Santa+Monica+Blvd+Los+Angeles,+CA+90067&amp;ie=UTF8&amp;hq=&amp;hnear=10250+Santa+Monica+Blvd,+Los+Angeles,+California+90067&amp;gl=us&amp;t=h&amp;z=14&amp;ll= 34.058603,-118.419048&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small>
 
 
 ])

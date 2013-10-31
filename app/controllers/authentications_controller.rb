@@ -27,8 +27,8 @@ end
 
   def destroy
     session[:user_id] = nil
-    @dude = "Hi"
-    # redirect_to authentications_url,
-    #  notice: "You signed out."
+    # @dude = "Fuck off"
+    redirect_to authentications_url,
+     notice: "You signed out."
   end
 end

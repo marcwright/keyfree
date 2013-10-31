@@ -1,5 +1,5 @@
 Keyfree::Application.routes.draw do
-    root to: 'rests#new'
+    root to: 'authentications#new'
 
    	put 'groups' => 'groups#update'
 

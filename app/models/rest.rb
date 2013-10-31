@@ -10,6 +10,6 @@ class Rest
 	field :lat, type: String
     field :lon, type: String
 
-    has_and_belongs_to_many :users, class_name:"User", inverse_of: :rest
+    belongs_to :user
 
 end

@@ -10,6 +10,8 @@
 				<th>FEE</th>
 				<th>LINK</th>
 				<th>NOTES</th>
+				<th></th>
+				<th></th>
 			</tr>
 				
 			<% @rests.each do |rest| %>
@@ -21,6 +23,9 @@
 				<td>$<%= rest.fee %></td>
 				<td><a href="<%= rest.web %>"><%= rest.name %></a></td>
 				<td><%= rest.notes %></td>
+				<td><%= button_to 'Update', edit_rest_path(rest._id), method: 'get', :confirm => 'Are you sure you want to update?' %></td>
+				<td><%= button_to 'Delete', rest_path(rest._id), method: 'delete', :confirm => 'Are you sure?' %></td>
+
 			</tr>	
 			<%end %>
 		

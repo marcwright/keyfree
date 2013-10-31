@@ -1,15 +1,4 @@
-<div id="newrest">
-	 <div id="newrestbox">
-
-		<strong><%= @rest.name %></strong></br>
-		<%= @rest.city %></br>
-		<%= @rest.zip %></br>
-		Website: <%= @rest.web %></br>
-		Fee: $<%= @rest.fee %></br>
-		<%= @rest.notes %></br>
-		
-
-	<script type="text/javascript"
+<script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD32oFCWtStoFQ9JzajCXErEoGQNMWlIts&sensor=true">
     </script>
     <script type="text/javascript">
@@ -48,7 +37,22 @@
 
     </script>
 
+
+<div id="newrest">
+	 <div id="newrestbox">
+
+		<strong><%= @rest.name %></strong></br>
+    <%= @rest.city %></br>
+    <%= @rest.zip %></br>
+    Website: <%= @rest.web %></br>
+    Fee: $<%= @rest.fee %></br>
+    <%= @rest.notes %></br>
+
   		
-	 </div>
+	
   <div id="map-canvas"/>
+
+  
+   </div>
+   </div>
 </div>

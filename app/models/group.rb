@@ -4,7 +4,7 @@ class Group
  field :name, type:String
  field :descrip, type:String
 
- has_many :users, class_name:"User", inverse_of: :groups
+ has_many :users
  # embeds_many :point
 
 end
