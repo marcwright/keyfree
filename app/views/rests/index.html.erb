@@ -1,35 +1,30 @@
 <div id="restlist">
 	<div id="restlistbox">
 		<h1>List of Restaurants</h1>
-
-		<table class="table table-hover">
-			<tr>
-				<th>NAME</th>
-				<th>CITY</th>
-				<th>ZIP</th>
-				<th>FEE</th>
-				<th>LINK</th>
-				<th>NOTES</th>
-				<th></th>
-				<th></th>
-			</tr>
-				
+			<table class="table table-hover">
+				<tr>
+					<th>NAME</th>
+					<th>CITY</th>
+					<th>ZIP</th>
+					<th>FEE</th>
+					<th>LINK</th>
+					<th>NOTES</th>
+					<th></th>
+					<th></th>
+				</tr>
 			<% @rests.each do |rest| %>
-
-			<tr>			
-				<td><%= link_to rest.name, rest %></td>
-				<td><%= rest.city %></td>
-				<td><%= rest.zip %></td>
-				<td>$<%= rest.fee %></td>
-				<td><a href="<%= rest.web %>"><%= rest.name %></a></td>
-				<td><%= rest.notes %></td>
-				<td><%= button_to 'Update', edit_rest_path(rest._id), method: 'get' %></td>
-				<td><%= button_to 'Delete', rest_path(rest._id), method: 'delete', :confirm => 'Are you sure?' %></td>
-
-			</tr>	
+				<tr>			
+					<td><%= link_to rest.name, rest, 'data-no-turbolink' => true %></td>
+					<td><%= rest.city %></td>
+					<td><%= rest.zip %></td>
+					<td>$<%= rest.fee %></td>
+					<td><a href="<%= rest.web %>"><%= rest.name %></a></td>
+					<td><%= rest.notes %></td>
+					<td><%= button_to 'Update', edit_rest_path(rest._id), method: 'get' %></td>
+					<td><%= button_to 'Delete', rest_path(rest._id), method: 'delete', :confirm => 'Are you sure?' %></td>
+				</tr>	
 			<%end %>
-		
-		</table>
+			</table>
 	</div>
 </div>
 

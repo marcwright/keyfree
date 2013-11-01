@@ -3,7 +3,7 @@
 */
 $maincolor: black;
 
- #map-canvas { 
+#map-canvas { 
  	height: 500px;
  	width: 500px;
  	margin: 20 auto;
@@ -12,7 +12,8 @@ $maincolor: black;
  	left: -75px;
  	padding: 50px;
  }
-.nav {
+
+.nav-tabs {
 	color: white;
 }
 
@@ -20,9 +21,9 @@ $maincolor: black;
 	color: red;
 }
 
- h3 {
+h3 {
  	color: white;
- }
+}
 
 .navbar {
 	display: inline-block;
@@ -31,7 +32,7 @@ $maincolor: black;
 
 .masthead {
   display: inline-block;
- }
+}
 
 .jumbotron {
 	position: absolute;
@@ -83,11 +84,7 @@ li {
 }
 
 body {
-/*	background-image: url(image-path('corks2.jpg'));
-	background-size: cover;
-	background-repeat: no-repeat;
-*/
-background: url(image-path('corks3.png')) no-repeat center center fixed;
+	background: url(image-path('corks3a.png')) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -112,7 +109,6 @@ body {
 	background-color: #eee;
 	width: 800px;
 	margin: 0 auto;
-
 }
 
 #indexcontainer {

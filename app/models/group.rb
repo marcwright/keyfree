@@ -1,10 +1,10 @@
 class Group
- include Mongoid::Document
+	include Mongoid::Document
 
- field :name, type:String
- field :descrip, type:String
+	field :name, type:String
+	field :descrip, type:String
 
- has_many :users
- # embeds_many :point
+	has_many :users
+	# embeds_many :point
 
 end

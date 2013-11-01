@@ -1,33 +1,15 @@
 <div>
-		<ul class="nav navbar-inverse nav-tabs navbar-fixed-top">
-
-     	 <li><a href="/">Key Free</a></li>
- 			 <li><a href="/rests">List</a></li>
- 			 <li><a href="/rests/new">New Rest</a></li>
- 			 <li><a href="/users/new">New Users</a></li>
-<!--        <li><a href="/authentications/new">Sign In</a></li>
- -->       <li><a href="/groups/">Groups</a></li>
-
+	<ul class="nav navbar-inverse nav-tabs navbar-fixed-top">
+     <li><a href="/">Key Free</a></li>
+   	 <li><a href="/rests">List</a></li>
+   	 <li><a href="/rests/new">New Rest</a></li>
+   	 <li><a href="/users/new">New Users</a></li>
+     <li><a href="/groups/">Groups</a></li>
        <%if current_user != nil%>
-
-
-       <li class="navtext">You're logged in as <%= current_user.email %>!</li>
-       <li><%= button_to "Log out", "/authentications/new/", method: :delete %></li>
-        
-        <%else%>
-
-
-
-
-<!--        <form class="navbar-form pull-right">
-              <input class="span2" type="text" placeholder="Email">
-              <input class="span2" type="password" placeholder="Password">
-              <a input class="btn btn-default" type="submit" href="/rests">Sign in</a></button>
-              <a input class="btn btn-default" type="submit" href="/rests">New User</a></button>
-          </form>
- -->
+        <button type="button"><%= button_to "Log out", "/authentications/new/", method: :delete %></button>
+        <p class="navbar-text pull-right">Signed in as <%= current_user.email %></p> 
+       <%else%>
        <%end%> 
-
-		</ul>
+	</ul>
 </div>
 	

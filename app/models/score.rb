@@ -1,8 +1,8 @@
 class Score
-include Mongoid::Document
+	include Mongoid::Document
 
-field :test_name, type:String
-field :test_score, type:Float
+	field :test_name, type:String
+	field :test_score, type:Float
 
-belongs_to :user
+	belongs_to :user
 end

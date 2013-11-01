@@ -1,9 +1,7 @@
 <div id="newrest">
   <div id="newrestbox" class="jumbotron">
     <h1>Create a New User</h1></br>
-
       <%= form_for @user , html: {class: "form-group col-lg-10"} do |i|%>
-
         <p>
           <%= i.label :email, ""%><br/>
           <%= i.text_field :email %>
@@ -19,7 +17,6 @@
         <p>
           <%= i.submit%>
         </p>
-      <%end%>
-          
+      <%end%>  
   </div>
 </div>

@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Keyfree</title>
-  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-   <nav>
-		<!-- <ul class="nav navbar-inverse nav-tabs navbar"> -->
-
-      <%= render 'layouts/nav' %>
-
+  <head>
+   <title>Keyfree</title>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body class="myElement">
+    <nav>
+        <%= render 'layouts/nav' %>
   	</nav>
-
-      <%= yield %>
-
-      <footer>
+        <%= yield %>
+    <footer>
         <%= render 'layouts/footer' %>
-      </footer>
-
-</body>
+    </footer>
+  </body>
 </html>

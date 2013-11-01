@@ -24,10 +24,6 @@
 # u.scores.create(test_name:"ACT", test_score:33)
 # u.scores.create(test_name:"AFQT", test_score:87)
 
-
-
-
-
 Rest.destroy_all
 
 Rest.create([
@@ -43,10 +39,10 @@ Rest.create([
 	{name: 'Foundry on Melrose', lat: '34.088755', lon: '-118.276434', city: 'West Hollywood', zip: '90036', web: 'http://thefoundryonmelrose.com/', fee: $0},
 	{name: 'Girasole', lat: '34.088755', lon: '-118.276434', city: 'Larchmont Village', zip: '90004', web: 'http://girasolecucina.com/', fee: $0},
 	{name: 'Houstons', lat: '34.088755', lon: '-118.276434', city: 'Santa Monica', fee: $0},
-	{name: 'Jitlada Thai', lat: '34.088755', lon: '-118.276434', city: 'Hollywood', zip: '90027', web: 'http://localthaifood.moxyfy.com/restaurant/details/%26id=176', fee: $0}
-	# {name: 'La Grande Orange', lat: '34.088755', lon: '-118.276434', city: 'Pasadena', zip: '91105	http://www.lagrandeorangecafe.com/, fee: $0},
-	# {name: 'Latitude Thai', lat: '34.088755', lon: '-118.276434', city: 'Santa Monica', zip: '90405	http://www.lattitudethai.com/, fee: $0},
-	# {name: 'Metro Café', lat: '34.088755', lon: '-118.276434', city: 'Culver City', zip: '	90232	http://www.metrocafela.com/, fee: $0},
+	{name: 'Jitlada Thai', lat: '34.088755', lon: '-118.276434', city: 'Hollywood', zip: '90027', web: 'http://localthaifood.moxyfy.com/restaurant/details/%26id=176', fee: $0},
+	{name: 'La Grande Orange', lat: '34.088755', lon: '-118.276434', city: 'Pasadena', zip: '91105', web: 'http://www.lagrandeorangecafe.com/', fee: $0},
+	{name: 'Latitude Thai', lat: '34.088755', lon: '-118.276434', city: 'Santa Monica', zip: '90405', web: 'http://www.lattitudethai.com/', fee: $0},
+	{name: 'Metro Café', lat: '34.088755', lon: '-118.276434', city: 'Culver City', zip: '90232', web: 'http://www.metrocafela.com/', fee: $0}
 	# {name: 'Ocean Ave', lat: '34.088755', lon: '-118.276434', city: 'Santa Monica', zip: '		
 	# {name: 'Oceanview', lat: '34.088755', lon: '-118.276434', city: 'Bistro	Montrose', zip: '		
 	# {name: 'Pinot Café', lat: '34.088755', lon: '-118.276434', city: 'Los Angeles', zip: '		
@@ -59,9 +55,6 @@ Rest.create([
 	# {name: 'Two Boots', lat: '34.088755', lon: '-118.276434', city: 'Echo Park		
 	# {name: 'Water Grill', lat: '34.088755', lon: '-118.276434', city: 'Los Angeles'	
 	# {name: 'Zanes Restaurant', lat: '34.088755', lon: '-118.276434', city: 'Hermosa Beach'		
-
-
-
 
 ])
 

@@ -11,7 +11,7 @@ class AuthenticationsController < ApplicationController
 		end
 	end
 
-def create
+  def create
     user = User.find_by(email: params[:user][:email])
     if user
         # authenticate user
@@ -23,12 +23,12 @@ def create
           render :new
         end
     end
-end
+  end
 
   def destroy
     session[:user_id] = nil
     # @dude = "Fuck off"
     redirect_to authentications_url,
      notice: "You signed out."
+    end
   end
-end
