@@ -4,18 +4,21 @@
 $maincolor: black;
 
  #map-canvas { 
- 	height: 400px;
- 	width: 400px;
- 	margin: 0 auto;
+ 	height: 500px;
+ 	width: 500px;
+ 	margin: 20 auto;
  	position: absolute;
- 	top: 150px;
- 	left: -50px;
- 	padding: 20px;
+ 	top: 175px;
+ 	left: -75px;
+ 	padding: 50px;
  }
-.navtext {
+.nav {
 	color: white;
 }
 
+@navbar-default-color {
+	color: red;
+}
 
  h3 {
  	color: white;
@@ -23,6 +26,7 @@ $maincolor: black;
 
 .navbar {
 	display: inline-block;
+	color: white;
 }
 
 .masthead {

@@ -6,7 +6,7 @@ ruby "2.0.0"
 gem 'rails', '4.0.0'
 gem 'mongoid', github:'mongoid/mongoid'
 gem 'bcrypt-ruby', github: 'codahale/bcrypt-ruby'
-
+gem "mongohq", "~> 0.6.2"
 
 # Use SCSS for stylesheets + Bootstrap
 gem 'sass-rails', '~> 4.0.0'

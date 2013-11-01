@@ -11,7 +11,7 @@ class User
  
 
   # belongs_to :groups
-  has_many :rests
+  has_many :reviews
   # has_many :scores
 
 	  
