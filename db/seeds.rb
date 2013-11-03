@@ -42,7 +42,7 @@ Rest.create([
 	{name: 'Jitlada Thai', lat: '34.088755', lon: '-118.276434', city: 'Hollywood', zip: '90027', web: 'http://localthaifood.moxyfy.com/restaurant/details/%26id=176', fee: $0},
 	{name: 'La Grande Orange', lat: '34.088755', lon: '-118.276434', city: 'Pasadena', zip: '91105', web: 'http://www.lagrandeorangecafe.com/', fee: $0},
 	{name: 'Latitude Thai', lat: '34.088755', lon: '-118.276434', city: 'Santa Monica', zip: '90405', web: 'http://www.lattitudethai.com/', fee: $0},
-	{name: 'Metro Café', lat: '34.088755', lon: '-118.276434', city: 'Culver City', zip: '90232', web: 'http://www.metrocafela.com/', fee: $0}
+	{name: 'Metro Café', lat: '34.088754', lon: '-118.276434', city: 'Culver City', zip: '90232', web: 'http://www.metrocafela.com/', fee: $0}
 	# {name: 'Ocean Ave', lat: '34.088755', lon: '-118.276434', city: 'Santa Monica', zip: '		
 	# {name: 'Oceanview', lat: '34.088755', lon: '-118.276434', city: 'Bistro	Montrose', zip: '		
 	# {name: 'Pinot Café', lat: '34.088755', lon: '-118.276434', city: 'Los Angeles', zip: '		
