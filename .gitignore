@@ -14,3 +14,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+.DS_Store
+vendor/bundle
+.env
+config/database.yml
+config/mongoid.yml
