@@ -1,11 +1,11 @@
 <div>
 	<ul class="nav navbar-inverse nav-tabs navbar-fixed-top">
-     <li><a href="/">Key Free</a></li>
+     <li><a href="/">KEYFREE</a></li>
    	 <li><a href="/rests">List</a></li>
    	 <li><a href="/rests/new">New Rest</a></li>
    	 <li><a href="/users/new">New Users</a></li>
-     <li><a href="/groups/">Groups</a></li>
-       <%if current_user != nil%>
+<!--      <li><a href="/groups/">Groups</a></li>
+ -->       <%if current_user != nil%>
         <button type="button"><%= button_to "Log out", "/authentications/new/", method: :delete %></button>
         <p class="navbar-text pull-right">Signed in as <%= current_user.email %></p> 
        <%else%>

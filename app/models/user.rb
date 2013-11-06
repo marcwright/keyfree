@@ -10,9 +10,7 @@ class User
   	field :hashed_password, type: String
    
 
-    # belongs_to :groups
     has_many :rests
-    # has_many :scores
 
   	  
     validates :email, presence: true

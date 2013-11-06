@@ -5,6 +5,4 @@ class Group
 	field :descrip, type:String
 
 	has_many :users
-	# embeds_many :point
-
 end

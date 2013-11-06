@@ -9,8 +9,8 @@ Keyfree::Application.routes.draw do
 	 resources :rests
 
 
-    # get 'signin' => 'authentications#new'
-    # get 'signout' => 'authentications'
+# 	  get 'signin' => 'authentications#new'
+# 	  get 'signout' => 'authentications'
 #     post 'users' => 'users#create'
 
 #     get 'rests' => 'rests#index'

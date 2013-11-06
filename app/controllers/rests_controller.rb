@@ -32,27 +32,3 @@ class RestsController < ApplicationController
 		redirect_to rests_url
 	end
 end
-
-
-
-# def edit
-# @movie = Movie.find(params[:id])
-# end
-
-# def update
-# @movie = Movie.find(params[:id])
-# @movie.update(submit_params)
-
-# redirect_to @movie
-# end
-
-# def new
-# @movie = Movie.new
-# end
-
-# def create
-# @movie = Movie.new(submit_params)
-# @movie.save
-
-# redirect_to @movie
-# end
